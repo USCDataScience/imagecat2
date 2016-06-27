@@ -5,23 +5,22 @@ This project includes tools required to perform metadata analysis. Specifically,
 
 ## Quick Start Using Docker
 
-1. Get and install docker for your operating system (if not already)
-
-2. Build a docker image
- This can be done by
-
-    docker build . -f docker/Dockerfile -t imagecat2
-
+1. Get and install docker for your operating system (if not already) https://www.docker.com/products/docker
+2. Build a docker image. This can be done by  
+```docker build . -f docker/Dockerfile -t imagecat2```
 3. get inside docker container and start services
+```
+docker run -it imagecat2 # or unique id for your build
+# starts solr
+/deploy/solr/bin/solr start 
 
-  docker run -it imagecat2 # or unique id for your build
-  /deploy/solr/bin/solr start # starts solr
-  java -jar /deploy/parser-indexer/parser-indexer*.jar # invokes parser indexer, more info check out https://github.com/USCDataScience/parser-indexer
-  
+# invokes parser indexer, more info check out https://github.com/USCDataScience/parser-indexer
+java -jar /deploy/parser-indexer/parser-indexer*.jar
+```
 
 ## Questions / Bugs / Features ?
 
-Please create an issue at https://github.com/uscdataScience/imagecat2/issues
+Please create issues at https://github.com/uscdataScience/imagecat2/issues
 
 
 ## Developers
