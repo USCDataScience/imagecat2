@@ -16,6 +16,9 @@ docker run -it imagecat2 # or unique id for your build
 
 # invokes parser indexer, more info check out https://github.com/USCDataScience/parser-indexer
 java -jar /deploy/parser-indexer/parser-indexer*.jar
+
+# Example 
+java -jar /deploy/parser-indexer/parser-indexer-1.0-SNAPSHOT.jar postdump -solr http://localhost:8983/solr/imagecatdev -in /etc/hosts
 ```
 
 ## Questions / Bugs / Features ?
