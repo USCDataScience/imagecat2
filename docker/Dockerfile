@@ -42,6 +42,3 @@ RUN wget -q "http://archive.apache.org/dist/lucene/solr/4.10.4/solr-4.10.4.tgz"
 RUN tar xf solr-4.10.4.tgz -C /deploy/solr4 --strip-components=1 && \
     rm -r /deploy/solr4/example/solr/* && \
     cp -r /data/imagecat2/solr/solr/* /deploy/solr4/example/solr/
-
-# COPY entrypoint_imagecatdev.sh /deploy/entrypoint_imagecatdev.sh
-# ENTRYPOINT ["/deploy/entrypoint_imagecatdev.sh"]
