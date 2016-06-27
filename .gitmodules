@@ -1,0 +1,6 @@
+[submodule "tika-ner-corenlp"]
+	path = tika-ner-corenlp
+	url = https://github.com/thammegowda/tika-ner-corenlp.git
+[submodule "parser-indexer"]
+	path = parser-indexer
+	url = https://github.com/USCDataScience/parser-indexer.git
