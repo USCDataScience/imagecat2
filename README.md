@@ -12,7 +12,7 @@ This project includes tools required to perform metadata analysis. Specifically,
 ```
 docker run -it imagecat2 # or unique id for your build
 # starts solr
-/deploy/solr/bin/solr start 
+/deploy/solr4/bin/solr start 
 
 # invokes parser indexer, more info check out https://github.com/USCDataScience/parser-indexer
 java -jar /deploy/parser-indexer/parser-indexer*.jar
